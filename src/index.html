@@ -5,41 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Webpack Starter Kit</title>
-
-    <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
   </head>
-
   <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
+    <div class="siema">
+      <div>Hi, I'm slide 1</div>
+      <div>Hi, I'm slide 2</div>
+      <div>Hi, I'm slide 3</div>
+      <div>Hi, I'm slide 4</div>
+    </div>
 
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
+    <button class="js-prev">prev</button>
+    <button class="js-next">next</button>
+
+    <button type="button" data-open-modal>Открыть модалку</button>
+    <!-- Разметка для модалки  -->
+    <template id="modal">
+      <div class="modal">
+        <p>I'm a modal created from a DOM element/node.</p>
+        <button type="button" data-close-modal>Х</button>
+      </div>
+    </template>
+
+    <!-- <div id="menu-container"></div>
+
+    <template id="menu-template">
+      <div class="menu">
+        <h3 class="menu-title">{{title}}</h3>
+        <ul class="menu-list">
+          {{#each items}}
+          <li class="menu-item">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </template> -->
   </body>
 </html>
